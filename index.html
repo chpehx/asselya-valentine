@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aselya 💖 Valentine's Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" autoplay loop>
+        <source src="piano.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Step 1: Initial Button -->
+    <div id="step1" class="screen active">
+        <button id="askBtn" class="main-btn">
+            Aselya, ❤️ I want to ask you something
+        </button>
+    </div>
+
+    <!-- Step 2: Question Card -->
+    <div id="step2" class="screen">
+        <div class="card">
+            <img src="cats.gif" alt="Cute cats" class="cats-gif">
+            <h1 class="question-text">Will you be my Valentine?</h1>
+            <div class="button-group">
+                <button id="yesBtn" class="choice-btn yes-btn">Yes 💘</button>
+                <button id="noBtn" class="choice-btn no-btn">No 💔</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 3: YES Response -->
+    <div id="step3" class="screen">
+        <div class="card">
+            <img src="yes.gif" alt="Happy!" class="response-gif">
+            <button id="forwardBtn" class="yay-btn">YAY! ❤️</button>
+        </div>
+    </div>
+
+    <!-- Step 4: Love Note -->
+    <div id="step4" class="screen">
+        <div class="note-container">
+            <h2 class="note-title">Asselya</h2>
+            <div class="note-text">
+                <p>Happy Valentine's day my love! I won't make this too long. I just want you to know that you make me really happy. I love the way we stay in touch every day, it means a lot to me. The days I spent without you, make me realize that they are not so good. I really hope that we start seeing each other more often, because I freaking love being around you.</p>
+                <p>I still remember your adorable smile, your sweet angelic voice, your energy and the way you care — it always stays with me. I'm so glad that we met &lt;333 Last February I didn't know u existed, this february, I can't imagine my life without you! We did the hardest part by meeting eachother in a world with millions of people, so let's do the easy part and not lose eachother.</p>
+                <p style="text-align: right; font-style: italic; margin-top: 20px;">-Anuar</p>
+            </div>
+            <button id="backArrowBtn" class="arrow-btn">←</button>
+        </div>
+    </div>
+
+    <!-- Step 5: NO Response -->
+    <div id="step5" class="screen">
+        <div class="card">
+            <img src="sad.gif" alt="Sad" class="response-gif">
+            <button id="resetBtn" class="sad-btn">Oh, okay then... 💔</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
